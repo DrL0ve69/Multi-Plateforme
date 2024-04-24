@@ -1,0 +1,10 @@
+body {
+
+    /* Nav bar fixed ceci montre un espace*/
+    min-height: 75rem;
+    padding-top: 4.5rem;
+    padding-bottom: 20px;
+}
+.navbar {
+    margin-bottom: 20px;
+}
