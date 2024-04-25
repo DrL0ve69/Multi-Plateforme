@@ -15,12 +15,13 @@ h2_Balise_Titre.style.backgroundColor = "black";
 i_Balise_Childlead.style.color = "white";
 i_Balise_Childlead.style.backgroundColor = "red";
 
-  h2_Balise_Titre.addEventListener("mouseout", () =>
+
+  h2_Balise_Titre.addEventListener("mouseleave", () =>
   {
-    h2_Balise_Titre.style.color = "black";
-    h2_Balise_Titre.style.backgroundColor = "white";
-    i_Balise_Childlead.style.color = "black";
-    i_Balise_Childlead.style.backgroundColor = "white";
+    h2_Balise_Titre.style.color = document.body.style.color;
+    h2_Balise_Titre.style.backgroundColor = li_1.style.backgroundColor ;
+    i_Balise_Childlead.style.color = document.body.style.color;
+    i_Balise_Childlead.style.backgroundColor = li_1.style.backgroundColor;
   });
 
 });
@@ -40,10 +41,12 @@ h1_Balise_Titre.addEventListener("mouseover", function () {
   p_Pagraphes_All[1].style.animation = "slide, 3s ease-in-out, 1s ease-in-out,1,right";
 
   // fonction qui permet au texte de rester noir, celle-ci n'est qu'appelée si mouseenter est activé.
-  h1_Balise_Titre.addEventListener("mouseout", function () {
+  h1_Balise_Titre.addEventListener("mouseleave", function () {
 
-    p_Pagraphes_All[1].style.color = "black";
     p_Pagraphes_All[1].style.textAlign = "start";
+    p_Pagraphes_All[1].style.color = document.body.style.color;
+    p_Pagraphes_All[1].style.backgroundColor = document.body.style.backgroundColor;
+
   });
 
 });
@@ -51,13 +54,21 @@ h1_Balise_Titre.addEventListener("mouseover", function () {
 
 li_1.type = "button";
 li_2.type = "button";
-
+// répétition on peut mettre dans une boucle for
 li_1.onclick = function ()
 {
   document.body.style.backgroundColor = "black";
   document.body.style.color = "white";
   this.style.backgroundColor = "black";
   li_2.style.backgroundColor = "black";
+  p_Pagraphes_All[1].style.color = document.body.style.color;
+  p_Pagraphes_All[1].style.backgroundColor = document.body.style.backgroundColor;
+  h2_Balise_Titre.style.color = document.body.style.color;
+  h2_Balise_Titre.style.backgroundColor = li_1.style.backgroundColor ;
+  i_Balise_Childlead.style.color = document.body.style.color;
+  i_Balise_Childlead.style.backgroundColor = document.body.style.backgroundColor;
+
+
 
 };
 li_2.onclick = function ()
@@ -66,6 +77,12 @@ li_2.onclick = function ()
   document.body.style.color = "black";
   this.style.backgroundColor = "white";
   li_1.style.backgroundColor = "white";
+  p_Pagraphes_All[1].style.color = document.body.style.color;
+  p_Pagraphes_All[1].style.backgroundColor = document.body.style.backgroundColor;
+  h2_Balise_Titre.style.color = document.body.style.color;
+  h2_Balise_Titre.style.backgroundColor = li_1.style.backgroundColor ;
+  i_Balise_Childlead.style.color = document.body.style.color;
+  i_Balise_Childlead.style.backgroundColor = document.body.style.backgroundColor;
 }
 
 /*
