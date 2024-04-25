@@ -7,7 +7,7 @@ const leadParagraphe = document.getElementsByClassName('lead');
 const i_Balise_Childlead = document.querySelectorAll("i")[0];
 const p_Pagraphes_All = document.querySelectorAll("p");
 
-
+//CHANGER D'APPROCHE LE BOOTSTRAP ÉTAIT UNE ANCIENNE VERSION AVEC LE LINK CSS CELUI CI FONCTION POUR LE COLOR MODE!!!
 h2_Balise_Titre.addEventListener("mouseenter", () =>
 {
 h2_Balise_Titre.style.color = "white";
@@ -83,6 +83,7 @@ li_2.onclick = function ()
   h2_Balise_Titre.style.backgroundColor = li_1.style.backgroundColor ;
   i_Balise_Childlead.style.color = document.body.style.color;
   i_Balise_Childlead.style.backgroundColor = document.body.style.backgroundColor;
+
 }
 
 /*
