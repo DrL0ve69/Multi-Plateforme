@@ -37,15 +37,16 @@ h1_Balise_Titre.addEventListener("mouseover", function () {
 
   h1_Balise_Titre.style.cursor = "pointer";
   p_Pagraphes_All[1].style.color = "gray";
-  p_Pagraphes_All[1].style.textAlign = "right";
   p_Pagraphes_All[1].style.animation = "slide, 3s ease-in-out, 1s ease-in-out,1,right";
+  gsap.to(p_Pagraphes_All[1],{duration:3,x:350,ease:".in"});
 
   // fonction qui permet au texte de rester noir, celle-ci n'est qu'appelée si mouseenter est activé.
   h1_Balise_Titre.addEventListener("mouseleave", function () {
 
-    p_Pagraphes_All[1].style.textAlign = "start";
     p_Pagraphes_All[1].style.color = document.body.style.color;
     p_Pagraphes_All[1].style.backgroundColor = document.body.style.backgroundColor;
+    gsap.to(p_Pagraphes_All[1],{duration:3,x:0,ease:".in"});
+    //gsap fait le transalate automatiquement
 
   });
 
