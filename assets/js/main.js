@@ -4,18 +4,19 @@ const mainContainer = document.getElementsByClassName("container");
 const h1_Balise_Titre = document.body.querySelector("h1");
 const h2_Balise_Titre = document.body.querySelector("h2");
 const leadParagraphe = document.getElementsByClassName('lead');
+const p_Balise_Suivantlead = document.querySelectorAll("p")[0];
 h2_Balise_Titre.addEventListener("mouseenter", () =>
 {
 h2_Balise_Titre.style.color = "white";
 h2_Balise_Titre.style.backgroundColor = "black";
-leadParagraphe.style.color = "white";
-leadParagraphe.style.backgroundColor = "red";
+p_Balise_Suivantlead.style.color = "white";
+p_Balise_Suivantlead.style.backgroundColor = "red";
 
 });
 
 
 
-const p_Balise_Suivantlead = document.querySelectorAll("p")[1];
+
 
 
 
