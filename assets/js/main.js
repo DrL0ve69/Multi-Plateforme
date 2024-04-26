@@ -68,6 +68,8 @@ li_1.onclick = function ()
   h2_Balise_Titre.style.backgroundColor = li_1.style.backgroundColor ;
   i_Balise_Childlead.style.color = document.body.style.color;
   i_Balise_Childlead.style.backgroundColor = document.body.style.backgroundColor;
+  this.style.color = "white";
+  li_2.style.color = "white";
 
 
 
@@ -78,6 +80,8 @@ li_2.onclick = function ()
   document.body.style.color = "black";
   this.style.backgroundColor = "white";
   li_1.style.backgroundColor = "white";
+  this.style.color = "black";
+  li_1.style.color = "black";
   p_Pagraphes_All[1].style.color = document.body.style.color;
   p_Pagraphes_All[1].style.backgroundColor = document.body.style.backgroundColor;
   h2_Balise_Titre.style.color = document.body.style.color;
