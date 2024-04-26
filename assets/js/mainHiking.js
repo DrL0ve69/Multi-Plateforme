@@ -1,3 +1,6 @@
+// Définir tvariables du DOM
+console.log(document.documentURI)
+
 //Définitions variables du main&nav
 const mainHero_div = document.getElementById("mainHero_div");
 const h1_Balise = document.getElementById("titrePrincipal");
