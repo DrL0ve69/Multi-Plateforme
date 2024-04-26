@@ -9,9 +9,5 @@
     <orderEntry type="library" name="jquery-3.6.0" level="application" />
     <orderEntry type="library" name="es-module-shims" level="application" />
     <orderEntry type="library" name="@docsearch" level="application" />
-    <orderEntry type="library" name="@docsearch/css" level="application" />
-    <orderEntry type="library" name="jquery" level="application" />
-    <orderEntry type="library" name="popper.js" level="application" />
-    <orderEntry type="library" name="gsap" level="application" />
   </component>
 </module>
