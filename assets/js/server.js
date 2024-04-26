@@ -7,3 +7,5 @@ const server = http.createServer((req, res) =>
 const port = server.listen(8080);
 console.log('Server running at http://localhost:8080');
 console.log(`Server running at ${port}`);
+
+//mettre dans le meme module pour que ca fonctionne!!!
