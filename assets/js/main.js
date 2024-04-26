@@ -1,4 +1,4 @@
-// TRAVAIL1_TEXTE_LOREM_HOVER,ONCLICK,1STCHILD, CLASSLIST
+// TRAVAIL1_TEXTE_LOREM_HOVER,ONCLICK,1STCHILD, CLASSLIST => mainContainer.classList.add("data-bs-theme = 'auto'")
 // Déclaration des variables du body:
 const mainContainer = document.getElementsByClassName("container");
 const h1_Balise_Titre = document.body.querySelector("h1");
