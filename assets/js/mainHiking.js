@@ -13,3 +13,28 @@ h1_sectionSecondaire.style.color = "#edb47c";
 
 //Animation LOGO&Titre_h1
 gsap.from("h1", {duration: 5, x: "-1000", ease:"bounce"});
+
+
+// Un fade effect sur un mouse enter
+gsap.registerEffect({
+    name: "fade",
+    defaults: {duration: 3}, //defaults get applied to the "config" object passed to the effect below
+    effect: (targets, config) => {
+        return gsap.to(targets, {duration: config.duration, opacity: 0});
+    }
+});
+
+//utilisation sur le logo qui est la seule image pour l'instant
+//gsap.effects.fade("img");
+
+document.querySelectorAll("img").forEach(function(box) {
+    box.addEventListener("mouseenter", function() {
+        gsap.effects.fade(this);
+    });
+});
+
+// Syntaxe gsap.to("la balise ou .class ou #id", {duration: 5, x: "distanceEx -1000 ou 50%", y: "555", function : "slide"})
+
+const allButtons = document.getElementsByClassName("button");
+gsap.to("button, input, nav", { duration: "3" ,rotation: 360, x: -10, yPercent: 25 });
+
