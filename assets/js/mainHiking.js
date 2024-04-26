@@ -37,4 +37,14 @@ document.querySelectorAll("img").forEach(function(box) {
 
 const allButtons = document.getElementsByClassName("button");
 gsap.to("button, input, nav", { duration: "3" ,rotation: 360, x: -10, yPercent: 25 });
-
+/* L'effet yoyo 
+gsap.to(".box", { 
+  rotation: 360,
+  x: '100vw',
+  xPercent: -100,
+  // special properties
+  duration: 2, // how long the animation lasts
+  repeat: 2, // the number of repeats - this will play 3 times
+  yoyo: true, // this will alternate back and forth on each repeat. Like a yoyo
+});
+*/
